@@ -2,7 +2,7 @@
 import { HeroBtnProps } from "@/types"
 import Image from "next/image"
 
-export const HeroBtn = ({ title , containerStyles, handleClick} : HeroBtnProps) => {
+const HeroBtn = ({ title , containerStyles, handleClick} : HeroBtnProps) => {
   return (
       <button
           disabled={false}
@@ -17,3 +17,5 @@ export const HeroBtn = ({ title , containerStyles, handleClick} : HeroBtnProps) 
     </button>
   )
 }
+
+export default HeroBtn

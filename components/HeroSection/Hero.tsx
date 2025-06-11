@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import HeroBtn from '../ui/Buttons/HeroBtn'
 
-export const Hero = () => {
+const Hero = () => {
   const handleScroll = () => {
 
   }
@@ -32,3 +32,5 @@ export const Hero = () => {
     </div>
   )
 }
+
+export default Hero
