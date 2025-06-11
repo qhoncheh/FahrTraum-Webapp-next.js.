@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import HeroBtn from '../ui/Buttons/HeroBtn'
 
-const Hero = () => {
+export const Hero = () => {
   const handleScroll = () => {
 
   }
@@ -17,7 +17,6 @@ const Hero = () => {
           Streamline your car rental experience
           with our effortless booking process.
         </p>
-
         <HeroBtn
           title="Explore Cars"
           containerStyles="bg-primary-blue text-white rounded-full mt-10"
@@ -33,5 +32,3 @@ const Hero = () => {
     </div>
   )
 }
-
-export default Hero
