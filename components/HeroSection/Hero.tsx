@@ -17,7 +17,6 @@ const Hero = () => {
           Streamline your car rental experience
           with our effortless booking process.
         </p>
-
         <HeroBtn
           title="Explore Cars"
           containerStyles="bg-primary-blue text-white rounded-full mt-10"
