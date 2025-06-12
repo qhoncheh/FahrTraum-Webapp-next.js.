@@ -74,25 +74,25 @@ export const footerLinks = [
     {
         title: "Über uns",
         links: [
-            { title: "How it works", url: "/" },
-            { title: "Featured", url: "/" },
-            { title: "Partnership", url: "/" },
-            { title: "Bussiness Relation", url: "/" },
+            { title: "Wie es funktioniert", url: "/" },
+            { title: "Hervorgehoben", url: "/" },
+            { title: "Partnerschaft", url: "/" },
+            { title: "Geschäftsbeziehung", url: "/" },
         ],
     },
     {
         title: "Unternehmen",
         links: [
-            { title: "Events", url: "/" },
+            { title: "Veranstaltungen", url: "/" },
             { title: "Blog", url: "/" },
             { title: "Podcast", url: "/" },
-            { title: "Invite a friend", url: "/" },
+            { title: "Einen Freund einladen", url: "/" },
         ],
     },
     {
         title: "Soziale Netzwerke",
         links: [
-            { title: "Discord", url: "/" },
+            { title: "Zwietracht", url: "/" },
             { title: "Instagram", url: "/" },
             { title: "Twitter", url: "/" },
             { title: "Facebook", url: "/" },
