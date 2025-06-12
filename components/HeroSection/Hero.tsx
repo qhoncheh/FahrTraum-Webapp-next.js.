@@ -17,7 +17,6 @@ const Hero = () => {
           Optimieren Sie Ihre Autovermietung
           mit unserem unkomplizierten Buchungsprozess.
         </p>
-
         <HeroBtn
           title="Entdecken Sie Autos"
           containerStyles="bg-primary-blue text-white rounded-full mt-10"
