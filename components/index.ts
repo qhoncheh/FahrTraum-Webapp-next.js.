@@ -1,7 +1,11 @@
 import Hero from "./HeroSection/Hero"
-import HeroBtn from "./ui/Buttons/HeroBtn"
+import CustomBtn from "./ui/Buttons/CustomBtn"
+import {Header} from "./Header/Header"
+import {Footer} from "./Footer/Footer"
 
 export {
     Hero,
-    HeroBtn
+    CustomBtn,
+    Header,
+    Footer
 }

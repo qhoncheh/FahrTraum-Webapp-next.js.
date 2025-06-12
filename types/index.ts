@@ -4,5 +4,7 @@ export interface HeroBtnProps {
     title: string;
     containerStyles?: string;
     handleClick?:
-    MouseEventHandler<HTMLButtonElement>
+    MouseEventHandler<HTMLButtonElement>;
+    btnType?: "button" | "reset";
+    dataAos?: string;
 }
