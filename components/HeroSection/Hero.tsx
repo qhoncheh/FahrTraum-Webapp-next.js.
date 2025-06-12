@@ -4,11 +4,10 @@ import HeroBtn from '../ui/Buttons/HeroBtn'
 
 const Hero = () => {
   const handleScroll = () => {
-
   }
   return (
     <div className=' hero'>
-      <div className='flex-1 pt-36 padding-x'>
+      <div className='flex-1 padding-x'>
         <h1 className='hero__title'>
           Finden, buchen oder mieten Sie ein Auto -- schnell
           und einfach!
@@ -32,5 +31,4 @@ const Hero = () => {
     </div>
   )
 }
-
 export default Hero
