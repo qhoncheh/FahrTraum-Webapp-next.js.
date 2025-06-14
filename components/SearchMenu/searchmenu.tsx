@@ -1,12 +1,12 @@
 "use client"
 import { SearchMenuProps } from "@/types"
-import { Combobox, ComboboxOption, Transition } from "@headlessui/react"
+import { Combobox, Transition } from "@headlessui/react"
 import Image from "next/image"
 import { Fragment, useState } from "react"
 import { manufacturers } from "@/constants"
 import { Volkhov } from "next/font/google"
 
-const SearchMenu = ({ menu, setMenu }: SearchMenuProps) => {
+const SearchMenu = ({ menu, setMenu }: { menu: string | null; setMenu: (value: string | null) => void }) => {
   const [query, setQuery] = useState<string>('')
 
 
@@ -22,7 +22,7 @@ const SearchMenu = ({ menu, setMenu }: SearchMenuProps) => {
 
   return (
     <div className="flex-1 max-sm:w-full flex justify-start items-center">
-      <Combobox>
+      <Combobox value={menu} onChange={(value) => setMenu(value)}>
         <div className="relative w-full">
           <Combobox.Button className="absolute left-4 top-[2px] z-10">
             <Image src="/car-logo.svg"
@@ -44,7 +44,7 @@ const SearchMenu = ({ menu, setMenu }: SearchMenuProps) => {
           >
             <Combobox.Options>
                  { filteredManufacturers.map((item) => (
-                    <ComboboxOption
+                    <Combobox.Option
                       key={item}
                       value={item}
                       className={({ active }) =>
@@ -66,7 +66,7 @@ const SearchMenu = ({ menu, setMenu }: SearchMenuProps) => {
                      ) : null}
                    </>
                  )}
-                     </ComboboxOption>
+                     </Combobox.Option>
                   ))
               }
             </Combobox.Options>
