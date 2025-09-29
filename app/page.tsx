@@ -6,11 +6,9 @@ import ShowMore from "@/components/ShowMore";
 // import { fetchCars } from "@/utils";
 
 export default async function Home() {
-  // Uncomment and implement fetchCars if available, or define allCars as an empty array for now
-  const allCars: any[] = []; // Replace with: await fetchCars(); when fetchCars is implemented
-  const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 
-  // console.log(allCars)
+  const allCars: any[] = [];
+  const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
   
   return (
     <main className="overflow-hidden">
